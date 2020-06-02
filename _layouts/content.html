@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include landing_small.html title= page.title %}
+
+<!-- Start of Syllabus Section -->
+<div id="{{ page.title }}" class="offset">
+  <div class="jumbotron" style="margin-top:5px;">
+    <div class="{{ page.title }} narrow" style="margin-top: -25px;">
+      <div class="card bg-white rounded shadow-sm py-5 py-4">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

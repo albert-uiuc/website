@@ -1,0 +1,15 @@
+about: >-
+    about us statement
+
+staff:
+- name: "Karle Flanagan"
+  netid: "kflan"
+  role: "prof"
+  bio: >-
+    bio
+
+- name: "Jonas Reger"
+  netid: "wreger2"
+  role: "se"
+  bio: >-
+    bio

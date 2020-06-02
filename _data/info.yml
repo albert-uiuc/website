@@ -1,0 +1,65 @@
+# Semester Information (Changes from semester to semester)
+# smiley face:
+
+# Weekly Announcements
+announcements: >-
+  announcements
+
+# instructors and sections variables dictate content for the course sections info section of the home page, instructor contact information in syllabus, class times info in syllabus, bonus work info in syllabus, and instructor contact links in footer.
+# Note: the type attribute of the section variables must either be "In Person" or "Online" (These attribute values are case sensitive).
+
+
+# General Course Information (Doesn't change very often)
+# Course links
+links1:
+- title: "Lon-Capa"
+  subtitle: "Check Assignments"
+  url: "http://www.lon-capa.illinois.edu/"
+
+- title: "Compass2g"
+  subtitle: "Check Grades"
+  url: "https://compass2g.illinois.edu/"
+
+# Data program links
+links2:
+- title: "Data Analysis Program"
+  url: "http://dataprogram.stat.illinois.edu/"
+  icon: "fas fa-chart-bar fa-2x"
+
+- title: "Simulations"
+  url: "http://istics.net/fireman/sampling.html"
+  icon: "fas fa-calculator fa-2x"
+
+- title: "Guessing Correlations"
+  url: "http://www.istics.net/Correlations/"
+  icon: "fas fa-brain fa-2x"
+
+# Student experiences
+experiences:
+- text: "Read the newspaper in a new way, without their eyes glazing over when they see quantitative information."
+- text: "Know what questions to ask in evaluating studies and surveys."
+- text: "Understand what questions can and cannot be answered by statistical arguments."
+- text: "Appreciate how much of what matters to them can be better understood with statistics."
+- text: "Feel much more confident applying both logical reasoning and common sense to quantitative topics but are very aware that their intuition can sometimes be so wrong that it's shocking."
+- text: "But what's most surprising is they actually like statistics!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Additional comments...

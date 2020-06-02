@@ -1,0 +1,522 @@
+/*-- Font Import --*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+/*--
+UIUC Colors
+Blue (Midnight Blue)
+    #13294b
+    rgb(19,41,75)
+    10% lightened: #2D4365
+    10% darkened: #001032
+Orange (Chocolate)
+    #e84a27
+    rgb(232,74,39)
+    10% lightened: #FF6441
+    10% darkened:
+        #CF310E
+        rgb(207,49,14,)
+
+Steel Blue
+    #4b85c8
+    rgb(75,133,200)
+    25% darker rgb(48, 99, 157)
+
+--*/
+
+/*-- Basic Styling --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #13294b;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 55px;
+  margin-top: -60px;
+}
+
+/*-- Navigation Styling --*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: rgba(75,133,200,0.75)!important;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FF6441;
+}
+
+
+
+/*-- Landing Page Styling --*/
+.layer {
+  background-color: rgba(0,0,0,0.25);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position:absolute;
+  top:35%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 10px black;
+  padding-bottom: 15px;
+}
+
+.caption h3 {
+  font-size: 30px;
+  text-shadow: 1px 1px 8px black;
+  padding-bottom: 25px;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Announcements Styling */
+.announcements h2 {
+  color: #13294b;
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.announcements p, .announcements li {
+  color: #13294b;
+  font-size: 1.1vw;
+  text-align: left;
+}
+.announcements {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: none;
+}
+.announcements .card {
+  margin: -28px 20px 0px 20px;
+  padding: 0 auto;
+}
+
+
+/*-- Information Pages Styling --*/
+.card {
+  padding: 0 7%;
+}
+
+#syllabus h1, #exam-schedule h1, #practice-exams h1, #faqs h1, #calendar h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #13294b;
+}
+
+#syllabus h2, #exam-schedule h2, #practice-exams h2, #faqs h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #13294b;
+  border-top: solid 1px rgba(19,41,75,0.1);
+  padding-top: 15px;
+  margin-top: 8px;
+}
+
+#exam-schedule h4, #practice-exams h4 {
+  font-size: 20px;
+}
+
+#syllabus li {
+  font-size: 15px;
+  color: #13294b;
+}
+
+#syllabus ul {
+  padding-left: 0;
+}
+
+#faqs button {
+  background-color: #2D4365;
+  border-color: #2D4365;
+  width: 100%;
+  white-space: normal;
+  font-size: 16px;
+  text-align: left;
+}
+
+#faqs button:hover {
+  background-color: #13294b;
+  border-color: #13294b;
+}
+
+#faqs .card {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+#exam-schedule table, #practice-exams table {
+  table-layout: fixed;
+}
+
+/*-- Sections Styling --*/
+
+.narrow {
+  width: 75%;
+  margin: 25px auto;
+  padding-top: 30px;
+}
+
+.narrow h1 {
+  font-size: 40px;
+}
+
+/*-- Links Section --*/
+.jumbotron {
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding: 30px 40px;
+  border-radius: 0;
+}
+
+h3.heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.heading-underline {
+  width:100px;
+  height: 2px;
+  background-color: #e84a27;
+  margin: 0 auto 30px;
+}
+
+.landing-heading-underline {
+  width:350px;
+  height: 3px;
+  background-color: #e84a27;
+  margin: 0 auto 30px;
+}
+
+.sub-heading-underline {
+  width:75px;
+  height: 1px;
+  background-color: #e84a27;
+  margin: 0 auto 30px;
+}
+
+.dark {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  padding: 115px 30px;
+  margin-top: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e84a27;
+}
+
+/*-- About Us Styling --*/
+.feature svg.svg-inline--fa {
+  color: #e84a27;
+}
+
+.feature h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+/*--.staff-card {
+   min-height: 100%;
+}--*/
+
+.staff-card img {
+  width: 80%
+}
+
+.staff-card button {
+    margin-top: 20px;
+    padding-bottom: 0px;
+    background-color: white;
+}
+
+/*-- Button Styling --*/
+
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 15px;
+  color: white;
+  background-color: #e84a27;
+  border-color: #e84a27;
+}
+
+.btn-secondary:hover {
+  background-color: #CF310E;
+  border-color: #CF310E;
+  color: white;
+}
+
+
+
+.btn-secondary svg.svg-inline--fa {
+  padding: 0 5px;
+  color: white;
+}
+
+
+/*-- Testimonials Styling --*/
+
+.testimonials li {
+  font-size: 20px;
+}
+
+
+.calendar th {
+  width=16.66%;
+  height:30px;
+  text-align:center;
+  line-height: 1em;
+}
+td {
+  text-align:left;
+  padding:0;
+  margin:0;
+}
+table {
+  table-layout:fixed;
+  margin:0;
+  padding:0;
+}
+.calendar p+p {
+  margin-top: 15px;
+}
+.calendar p {
+  margin:0;
+}
+.calendar b {
+  display: block;
+  margin-bottom: 15px;
+}
+.date {
+  font-size:95%;line-height:1px;
+}
+.hw {
+  color:red;font-size:100%;
+}
+.prel, .surv {
+  color:blue;font-size:100%;
+}
+.exam {
+  color:red;font-size:115%;
+}
+.conf {
+  font-size:115%;
+}
+
+
+/*-- Footer Styling --*/
+footer {
+  background-color: #13294b;
+  color: white;
+  padding: 30px 0 30px;
+  margin-top: 0px;
+}
+
+footer img {
+  height: 50px;
+  margin: 25px 0;
+}
+
+footer a {
+  color: white;
+  padding-bottom: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #e84a27;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #e84a27!important;
+}
+
+hr.socket {
+  width:100%;
+  border-top: 1px solid #2D4365;
+  margin-top: 50px;
+}
+
+
+/* iframe */
+
+iframe {
+  display:block;
+  width: 90%;
+  height: 800;
+  margin: 0 auto;
+  background-color: #777;
+}
+
+/*-- Media Styling --*/
+
+@media (max-width: 767px) {
+  /* Home Page Styling */
+  .caption {
+    top:25%;
+  }
+  .caption h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+  }
+  .caption h3 {
+    font-size: 23px;
+    padding-bottom: 20px;
+  }
+  .btn-lg {
+    padding: 10px 15px;;
+    font-size: 15px;;
+    font-weight: bold;
+  }
+  .landing-heading-underline {
+    width:200px;
+  }
+  /* Card Styling */
+  .narrow h1 {
+    font-size: 25px;
+  }
+  .narrow h2 {
+    font-size: 23px;
+  }
+  .narrow h3 {
+    font-size: 21px;
+  }
+  .narrow h4 {
+    font-size: 19px;
+  }
+  /* Information Pages Styling */
+  #syllabus h1, #exam-schedule h1, #practice-exams h1, #calendar h1, #faqs h1 {
+    font-size: 25px;
+  }
+  #syllabus h2, #exam-schedule h2, #practice-exams h2, #faqs h2 {
+    font-size: 20px;
+  }
+  #syllabus h3 {
+    font-size: 15px;
+  }
+  #syllabus li {
+    font-size: 15px;
+  }
+  #exam-schedule h4, #practice-exams h4 {
+    font-size: 15px;
+  }
+  #faqs button, #faqs .card-body {
+    font-size: 12px;
+  }
+  .syllabus {
+    width: 100%;
+  }
+  .syllabus.narrow, .calendar.narrow, .faqs.narrow, .exam-schedule.narrow, .practice-exams.narrow, .Covid-19-Online-Amendments.narrow, .grade-calculator.narrow {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .testimonials li {
+    font-size: 15px;
+  }
+  .testimonials ul.narrow {
+    width: 100%;
+  }
+  .jumbotron {
+    padding: 0 5px;
+    padding-bottom: 1px;
+    padding-top: 25px;
+  }
+  .syllabus.narrow .card, .exam-schedule.narrow .card, .practice-exams.narrow .card, .faqs.narrow .card, .Covid-19-Online-Amendments.narrow .card, .grade-calculator.narrow .card {
+    padding: 0 30px;
+    margin-bottom: -20px;
+  }
+  /* Calendar Styling */
+  .calendar.narrow .card {
+    padding: 0 5px;
+    margin-bottom: -20px;
+  }
+  .calendar .calendar-head {
+    padding: 0px 30px;
+    margin-bottom: 0px;
+  }
+  .calendar .table-responsive {
+    margin-bottom: -60px;
+  }
+  .calendar td {
+    font-size:50%;
+  }
+  /* Announcements Styling */
+  .announcements h2 {
+    color: #13294b;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .announcements p, .announcements li  {
+    color: #13294b;
+    font-size: 15px;
+    text-align: left;
+  }
+  .announcements {
+    margin: 0 auto;
+    padding: 0;
+    text-transform: none;
+  }
+  .announcements .card {
+    margin: 40px -40px 0px -40px;
+    padding: 0 auto;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 800;
+    margin: 0 auto;
+  }
+}
